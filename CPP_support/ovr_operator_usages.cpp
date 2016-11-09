@@ -54,3 +54,5 @@ void fraction_sample()
     std::cout << f1 << " * " << f2 << " = " << f1 * f2 << '\n';
 }
 
+//Try semantic highlighting by switching it on in Settings/Preferences, Editor | Colors & Fonts | Language Defaults
+
