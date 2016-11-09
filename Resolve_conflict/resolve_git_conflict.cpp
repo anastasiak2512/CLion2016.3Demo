@@ -8,7 +8,7 @@ typedef struct PersonData {
     friend std::ostream &operator<<(std::ostream &os , const PersonData &data);
 } PersonData;
 
-std::ostream &operator<<(std::ostream &os , const PersonData &data)
+std::ostream &operator<<(std::ostream &os , const PersonData &data, bool print_flag)
 {
     os << "id: " << data.id << " name: " << data.name;
     return os;
