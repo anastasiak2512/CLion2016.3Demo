@@ -8,3 +8,4 @@ add_executable(CLionDemo ${SOURCE_FILES})
 
 add_subdirectory(CPP_support)
 add_subdirectory(C_support)
+add_subdirectory(Resolve_context)
