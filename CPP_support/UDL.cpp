@@ -1,6 +1,5 @@
 
-//Sample 1: Call quick documentation (Ctrl+Q on Windows and Linux / F1 on macOS) on _fah
-//Sample 2: Rename _fah -> _fh using Rename refactoring
+//Sample 1: Rename _fah -> _fh using Rename refactoring
 constexpr long double operator"" _fah(long double const degrees)
 {
     //Converting Fahrenheit to Celsius
@@ -12,7 +11,9 @@ bool checkTemperature(long double temp) {
     return (temp < threshold);
 }
 
-//Sample 3: Chrono symbols parsing/resolving
+//Sample 2: Chrono symbols parsing/resolving
+//Use quick documentation (Ctrl+Q on Windows and Linux / F1 on macOS)
+//to check chrono values types
 #include <chrono>
 #include <iostream>
 
