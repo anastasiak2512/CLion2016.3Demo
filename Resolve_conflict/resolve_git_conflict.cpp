@@ -6,6 +6,7 @@ private:
     int id;
     const char *name;
 
+public:
     void printing(int type) {
         if (type) {
             std::cout << this << std::endl;
@@ -28,5 +29,5 @@ public:
 void usage () {
     PersonData p = PersonData(64, 0, "Bjarne Stroustrup");
 
-
+    
 }
