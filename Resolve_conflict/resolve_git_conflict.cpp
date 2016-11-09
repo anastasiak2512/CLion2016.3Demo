@@ -1,20 +1,32 @@
 #include <iostream>
 
-typedef struct PersonData {
+class PersonData {
+private:
     int age;
     int id;
     const char *name;
 
-    friend std::ostream &operator<<(std::ostream &os , const PersonData &data);
-} PersonData;
+    void printing(bool full) {
+        if (full) {
+            std::cout << this << std::endl;
+        } else {
+            std::cout << "Contact name: " << name;
+        }
+    }
 
-std::ostream &operator<<(std::ostream &os , const PersonData &data, bool print_flag)
-{
-    os << "id: " << data.id << " name: " << data.name;
-    return os;
-}
+public:
+    PersonData(int age , int id , const char *name) : age(age) , id(id) , name(name)
+    {}
 
-void printing() {
-    PersonData p = {64, 0, "Bjarne Stroustrup"};
-    std::cout << p << std::endl;
+    friend std::ostream &operator<<(std::ostream &os , const PersonData &data)
+    {
+        os << "age: " << data.age << " id: " << data.id << " name: " << data.name;
+        return os;
+    }
+};
+
+void usage () {
+    PersonData p = PersonData(64, 0, "Bjarne Stroustrup");
+
+    
 }
