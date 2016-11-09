@@ -6,6 +6,7 @@ private:
     int id;
     const char *name;
 
+public:
     void printing(bool full) {
         if (full) {
             std::cout << this << std::endl;
