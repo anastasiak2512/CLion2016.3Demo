@@ -1,5 +1,7 @@
 #include <iostream>
 
+//Switch configurations between resolve_context_flag and resolve_context_no_flag -
+//Corresponding conditional branch will be selected
 void check_context() {
     int count;
 
