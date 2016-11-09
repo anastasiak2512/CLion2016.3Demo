@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//Go to Settings/Preferences, Editor | Colors & Fonts | Font
+//Enable Font with ligatures and select bundled Fira Code font.
 void font_test() {
     map<string, string> it_map;
 
