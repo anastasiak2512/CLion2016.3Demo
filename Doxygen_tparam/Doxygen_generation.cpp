@@ -8,6 +8,7 @@ Maybe<T> maybe(T *context)
     return Maybe<T>(context);
 }
 
+// Press /// and type Enter to get Doxygen comments generated
 template<typename T>
 struct Maybe {
     T *context;
@@ -15,6 +16,7 @@ struct Maybe {
     Maybe(T *context) : context(context)
     {}
     
+    // Press /// and type Enter to get Doxygen comments generated
     template<typename TFunc>
     auto With(TFunc evaluator)
     {
