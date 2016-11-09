@@ -6,8 +6,8 @@ private:
     int id;
     const char *name;
 
-    void printing(bool full) {
-        if (full) {
+    void printing(int type) {
+        if (type) {
             std::cout << this << std::endl;
         } else {
             std::cout << "Contact name: " << name;
@@ -28,5 +28,5 @@ public:
 void usage () {
     PersonData p = PersonData(64, 0, "Bjarne Stroustrup");
 
-    
+
 }
