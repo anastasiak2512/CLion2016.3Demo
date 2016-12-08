@@ -42,3 +42,22 @@ void test(const X cx)
 {
     boo(cx);
 }
+
+#include <iostream>
+
+// Overload resolution involving variadcs
+template<class A0>
+void fooVar(const A0&) {
+    std::cout<<"no variadics";
+}
+template<class A0, class ...Args>
+void fooVar(const A0& a0, const Args& ...) {
+    std::cout<<"variadics";
+}
+
+
+
+
+void variadicsTest() {
+    fooVar(1); // should resolve to: "no variadics"
+}

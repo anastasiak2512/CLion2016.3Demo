@@ -1,4 +1,4 @@
-#include <iostream>
+#include <thread>
 
 //Sample 1: Fixed incorrect ‘Unused variable’ for the so called ‘guard’ idiom
 int g_i = 0;
@@ -25,7 +25,7 @@ enum class SomeEnum
     Enum3
 };
 
-uint test(const SomeEnum someEnum)
+unsigned int test(const SomeEnum someEnum)
 {
     switch(someEnum)
     {
